@@ -10,21 +10,72 @@
 
 </head>
 	<body>
-        <header>
-            <p id="titre">Noé Godin</p>
-            <hr>
-        </header>
-        <nav>
-            <ul id="bandeau">
-                <li id="1"><a> À propos de moi </a></li>
-                <li id="2"> Mes projets </li>
-                <li id="3"> Mes outils </li>
-                <li id="4"> me contacter </li>
-            </ul>
-        </nav>
+        <div id="partieSup">
+            <header>
+                <p id="titre">Noé Godin</p>
+                <hr>
+            </header>
+            <nav>
+                <ul id="bandeau">
+                    <a href="#A_propos_de_moi"><li id="1"> À propos de moi </li></a>
+                    <a href="#Mes_outils"><li id="2"> Mes outils </li></a>
+                    <a href="#Mes_projets"><li id="3"> Mes projets </li></a>
+                    <a href="#Me_contacter"><li id="4"> Me contacter </li></a>
+                </ul>
+            </nav>
+        </div>
+        <div id="partieInf">
         <div id="A_propos_de_moi">
             <h1> À propos de moi </h1>
-            <p class="txtDesc"> Je suis étudiant en 2nd année à l'IUT Paris Cité</p>
+            <p class="txtDesc"> Je suis étudiant en 2nd année à l'IUT Paris Rives de Seine</p>
+        </div>
+        <div id="Mes_outils">
+            <h1> Mes outils </h1>
+            <p class="txtDesc"> Voici les langages de programmation que je maîtrise</p>
+            <div id="Conteneuroutils">
+
+                <div class="outil">
+                    <img src="../sources/HTML.png" alt="HTML5" />
+                    <p> HTML 5 </p>
+                </div>
+
+                <div class="outil">
+                    <img src="../sources/CSS.png" alt="CSS3" />
+                    <p> CSS 3 </p>
+                </div>
+
+                <div class="outil">
+                    <img src="../sources/Javascript.png" alt="Javascript" />
+                    <p> Javascript </p>
+                </div>
+
+                <div class="outil">
+                    <img src="../sources/SQL3.png" alt="SQL3" />
+                    <p> SQL 3 </p>
+                </div>
+
+                <div class="outil">
+                    <img src="../sources/C.png" alt="C" />
+                    <p> C </p>
+                </div>
+
+                <div class="outil">
+                    <img src="../sources/C++.png" alt="C++" />
+                    <p> C++ </p>
+                </div>
+
+                <div class="outil">
+                    <img src="../sources/python.png" alt="Python" />
+                    <p> Python </p>
+                </div>
+
+                <div class="outil">
+                    <img src="../sources/java.png" alt="Java" />
+                    <p> Java </p>
+                </div>
+            
+            </div>
+
         </div>
         <div id="Mes_projets">
             <h1> Mes projets </h1>
@@ -51,7 +102,7 @@
                 </div>
 
                 <div class="projet">
-                        <h3>titre2</h3>
+                        <h3>titre3</h3>
                         <div class="langage">
                             <p>C++</p>
                         </div>
@@ -61,59 +112,41 @@
 
             </div>
         </div>
-        <div id="Mes_outils">
-            <h1> Mes outils </h1>
-            <p class="txtDesc"> Voici les langages de programmation que je maîtrise</p>
-            <div id="Conteneuroutils">
-                <div class="outil">
-                    <img src="../sources/java.png" alt="Java" />
-                    <p> Java </p>
+        <div id="Me_contacter">
+            <h1> Me contacter </h1>
+
+            <div id="Conteneurcontacts">
+
+                <div class="contact">
+                    <a href="mailto:noegodin2@gmail.com">
+                    <img src="../sources/mail.png" alt="noegodin2@gmail.com" />
+                    <div class="media">
+                        <p> E-mail </p>
+                    </div>
+                    </a>
                 </div>
 
-                <div class="outil">
-                    <img src="../sources/C.png" alt="C" />
-                    <p> C </p>
+                <div class="contact">
+                    <a href="tel:+33782543900">
+                    <img src="../sources/telephone.png" alt="0782543900" />
+                    <div class="media">
+                        <p> Téléphone </p>
+                    </div>
+                    </a>
                 </div>
 
-                <div class="outil">
-                    <img src="../sources/C++.png" alt="C++" />
-                    <p> C++ </p>
-                </div>
-            
-                <div class="outil">
-                    <img src="../sources/HTML.png" alt="HTML5" />
-                    <p> HTML 5 </p>
-                </div>
-
-                <div class="outil">
-                    <img src="../sources/CSS.png" alt="CSS3" />
-                    <p> CSS 3 </p>
+                <div class="contact">
+                    <a href="https://github.com/NoeGodin">
+                    <img src="../sources/github.png" alt="NoeGodin" />
+                    <div class="media">
+                        <p> Github </p>
+                    </div>
+                    </a>
                 </div>
 
-                <div class="outil">
-                    <img src="../sources/Javascript.png" alt="Javascript" />
-                    <p> Javascript </p>
-                </div>
-
-                <div class="outil">
-                    <img src="../sources/python.png" alt="Python" />
-                    <p> Python </p>
-                </div>
-
-                <div class="outil">
-                    <img src="../sources/SQL3.png" alt="SQL3" />
-                    <p> SQL 3 </p>
-                </div>
             </div>
 
         </div>
-        <div id="me_contacter">
-            <h1> Me contacter </h1>
-            <p class="txtDesc" id="infoPerso"> 
-                Mobile : +33 7 82 54 39 00 <br><br>
-                E-mail : noegodin2@gmail.com <br><br>
-                Adresse : 41 rue Georges Politzer, 94110 Arcueil
-            </p>
         </div>
 	</body>
 </html>

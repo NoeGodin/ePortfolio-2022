@@ -1,11 +1,32 @@
 :root { /* Variables pour charte graphique */
 	/* Couleurs */
-	--Black:#000000;
+	--fond:#3FABD0;
+    --releve:#37A1C4;
+    --fonce:#112E38;
 	/* Polices */
 	--gotham:"gotham";
 }
 
 /* ----- setting de base */
+a:link { 
+    text-decoration: none; 
+}
+
+
+a:visited { 
+    text-decoration: none; 
+}
+
+
+a:hover {
+    text-decoration: none; 
+}
+
+
+a:active {
+    text-decoration: none; 
+}
+
 * {
     margin:0;
     padding:0;
@@ -15,12 +36,11 @@ html {
     font-size: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-
-body {
-    margin: 0px;
+    margin: 5%;
+    box-shadow: 0 15px 30px rgba(0,0,0,.9);
     padding: 0px;
     min-height: 100vh;
+
 }
 
 *, *::before, *::after {
@@ -31,10 +51,16 @@ p, h1,h3,li {
     font-family:var(--gotham);
 }
 
+hr {
+    border : solid black 1px;
+}
+
 h1 {
-    margin-top:4%;
-    margin-bottom:1%;
+    padding-top:6%;
+    margin-bottom:2%;
     margin-left:3%;
+    font-size:3rem;
+    color: var(--fonce);
 }
 
 .txtDesc {
@@ -43,12 +69,20 @@ h1 {
 
 #titre {
     font-family:var(--gotham);
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
+    padding-top:1%;
+    margin-bottom:1%;
 }
 /* ----- fin des setting de base */
 
 /* ----- navbar */
+
+#partieInf {
+    background-color: var(--fond);
+    color:white;
+}
+
 #bandeau {
   display: grid;
   /*position:fixed; */
@@ -59,20 +93,23 @@ h1 {
   grid-gap: 1em;
   align-items: center;
   text-align: center;
-  border-bottom: 4px solid black;
+  border-bottom: 2px solid black;
 }
 
-#bandeau li {
+#bandeau a {
     display: flex;
 	position: relative;
 	float: left;
-	height: 30px;
+	height: 50px;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
+    color : black;
+    text-decoration: none;
 }
 
-#bandeau li:hover{
-	background-color:green;
+#bandeau a:hover{
+	background-color:var(--releve);
     color:white;
 	text-decoration: underline;
 }
@@ -94,6 +131,7 @@ h1 {
     margin-top:1.5%;
     border: solid black 1px;
     border-radius: 5%;
+    background-color: white;
 }
 
 .langage{
@@ -104,11 +142,13 @@ h1 {
 .projet h3{
     margin-top:1%;
     margin-left:4%;
+    color:black;
 }
 
 .projet .langage p {
     margin-right:4%;
     margin-bottom:1%;
+    color:black;
 }
 
 .descP {
@@ -116,6 +156,7 @@ h1 {
     margin-left:2%;
     margin-right:2%;
     margin-bottom: 1%;
+    color:black;
 }
 
 /* ----- fin de Mes_projet */
@@ -145,13 +186,35 @@ h1 {
 
 
 /* ----- Me_contacter */
-#me_contacter {
-    margin-bottom: 5%;
+#Me_contacter {
+    padding-bottom: 2.5%;
 }
 
-#infoPerso {
-    border:black solid 1px;
-    width:40%;
+#Conteneurcontacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+
+.contact {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact img {
+    height:100px;
+}
+
+.media{
+    display:flex;
+    justify-content: center;
+    color:black;
+}
+
+.media p {
+    text-decoration: none;
 }
 
 /* ----- fin de Me_contacter */
