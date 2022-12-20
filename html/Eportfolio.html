@@ -16,7 +16,7 @@
         </header>
         <nav>
             <ul id="bandeau">
-                <li id="1"> À propos de moi </li>
+                <li id="1"><a> À propos de moi </a></li>
                 <li id="2"> Mes projets </li>
                 <li id="3"> Mes outils </li>
                 <li id="4"> me contacter </li>
@@ -24,72 +24,96 @@
         </nav>
         <div id="A_propos_de_moi">
             <h1> À propos de moi </h1>
-            <p> Je suis étudiant en 2nd année à l'IUT Paris Cité</p>
+            <p class="txtDesc"> Je suis étudiant en 2nd année à l'IUT Paris Cité</p>
         </div>
         <div id="Mes_projets">
             <h1> Mes projets </h1>
-            <p> Voici des projets que j'ai pu mettre en place pendant mes années d'apprentissages en informatique</p>
+            <p class="txtDesc"> Voici des projets que j'ai pu mettre en place pendant mes années d'apprentissages en informatique</p>
             <div id="Conteneurprojets">
 
                 <div class="projet">
-                    <h3>titre1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique repellat repellendus debitis autem quas beatae in porro voluptates tempore nam, quis provident velit dolorum esse accusamus laboriosam, distinctio tempora magni.</p>
+                        <h3>titre1</h3>
+                        <div class="langage">
+                            <p>Java</p>
+                        </div>
                     <hr>
-                    <p>Java</p>
+                    <p class="descP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique repellat repellendus debitis autem quas beatae in porro voluptates tempore nam, quis provident velit dolorum esse accusamus laboriosam, distinctio tempora magni.</p>
                 </div>
 
                 <div class="projet">
-                    <h3>titre1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique repellat repellendus debitis autem quas beatae in porro voluptates tempore nam, quis provident velit dolorum esse accusamus laboriosam, distinctio tempora magni.</p>
+                        <h3>titre2</h3>
+                        <div class="langage">
+                            <p>C</p>
+                        </div>
+
                     <hr>
-                    <p>C</p>
+                    <p class="descP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique repellat repellendus debitis autem quas beatae in porro voluptates tempore nam, quis provident velit dolorum esse accusamus laboriosam, distinctio tempora magni.</p>
                 </div>
 
                 <div class="projet">
-                    <h3>titre1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique repellat repellendus debitis autem quas beatae in porro voluptates tempore nam, quis provident velit dolorum esse accusamus laboriosam, distinctio tempora magni.</p>
+                        <h3>titre2</h3>
+                        <div class="langage">
+                            <p>C++</p>
+                        </div>
                     <hr>
-                    <p>Python</p>
+                    <p class="descP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique repellat repellendus debitis autem quas beatae in porro voluptates tempore nam, quis provident velit dolorum esse accusamus laboriosam, distinctio tempora magni.</p>
                 </div>
 
             </div>
         </div>
         <div id="Mes_outils">
             <h1> Mes outils </h1>
-            <p> Voici les langages de programmation que je maîtrise</p>
+            <p class="txtDesc"> Voici les langages de programmation que je maîtrise</p>
             <div id="Conteneuroutils">
                 <div class="outil">
-                    <!--img src-->
+                    <img src="../sources/java.png" alt="Java" />
                     <p> Java </p>
                 </div>
 
                 <div class="outil">
-                    <!--img src-->
-                    <p> C++ </p>
+                    <img src="../sources/C.png" alt="C" />
+                    <p> C </p>
                 </div>
 
                 <div class="outil">
-                    <!--img src-->
+                    <img src="../sources/C++.png" alt="C++" />
                     <p> C++ </p>
                 </div>
             
                 <div class="outil">
-                    <!--img src-->
-                    <p> C++ </p>
+                    <img src="../sources/HTML.png" alt="HTML5" />
+                    <p> HTML 5 </p>
                 </div>
 
                 <div class="outil">
-                    <!--img src-->
-                    <p> C++ </p>
+                    <img src="../sources/CSS.png" alt="CSS3" />
+                    <p> CSS 3 </p>
+                </div>
+
+                <div class="outil">
+                    <img src="../sources/Javascript.png" alt="Javascript" />
+                    <p> Javascript </p>
+                </div>
+
+                <div class="outil">
+                    <img src="../sources/python.png" alt="Python" />
+                    <p> Python </p>
+                </div>
+
+                <div class="outil">
+                    <img src="../sources/SQL3.png" alt="SQL3" />
+                    <p> SQL 3 </p>
                 </div>
             </div>
 
         </div>
         <div id="me_contacter">
             <h1> Me contacter </h1>
-            <p> Mobile : +33 7 82 54 39 00 </p>
-            <p> E-mail : noegodin2@gmail.com </p>
-            <p> Adresse : 41 rue Georges Politzer, 94110 Arcueil </p>
+            <p class="txtDesc" id="infoPerso"> 
+                Mobile : +33 7 82 54 39 00 <br><br>
+                E-mail : noegodin2@gmail.com <br><br>
+                Adresse : 41 rue Georges Politzer, 94110 Arcueil
+            </p>
         </div>
 	</body>
 </html>
