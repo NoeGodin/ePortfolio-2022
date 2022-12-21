@@ -1,11 +1,32 @@
 :root { /* Variables pour charte graphique */
 	/* Couleurs */
-	--Black:#000000;
+	--fond:#3FABD0;
+    --releve:#37A1C4;
+    --fonce:#112E38;
 	/* Polices */
 	--gotham:"gotham";
 }
 
 /* ----- setting de base */
+a:link { 
+    text-decoration: none; 
+}
+
+
+a:visited { 
+    text-decoration: none; 
+}
+
+
+a:hover {
+    text-decoration: none; 
+}
+
+
+a:active {
+    text-decoration: none; 
+}
+
 * {
     margin:0;
     padding:0;
@@ -14,29 +35,57 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
-}
-
-body {
-    margin: 0px;
+    scroll-behavior: smooth;
+    margin: 5%;
+    box-shadow: 0 15px 30px rgba(0,0,0,.9);
     padding: 0px;
     min-height: 100vh;
+
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
 }
-/* ----- fin des setting de base */
+
+p, h1,h3,li {
+    font-family:var(--gotham);
+}
+
+hr {
+    border : solid black 1px;
+}
+
+h1 {
+    padding-top:6%;
+    margin-bottom:2%;
+    margin-left:3%;
+    font-size:3rem;
+    color: var(--fonce);
+}
+
+.txtDesc {
+    margin-left:4%;
+}
 
 #titre {
     font-family:var(--gotham);
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
+    padding-top:1%;
+    margin-bottom:1%;
 }
+/* ----- fin des setting de base */
 
 /* ----- navbar */
+
+#partieInf {
+    background-color: var(--fond);
+    color:white;
+}
+
 #bandeau {
   display: grid;
-  position:fixed;
+  /*position:fixed; */
   width:100%;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
@@ -44,10 +93,128 @@ body {
   grid-gap: 1em;
   align-items: center;
   text-align: center;
-  border-bottom: 4px solid black;
+  border-bottom: 2px solid black;
 }
+
+#bandeau a {
+    display: flex;
+	position: relative;
+	float: left;
+	height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color : black;
+    text-decoration: none;
+}
+
+#bandeau a:hover{
+	background-color:var(--releve);
+    color:white;
+	text-decoration: underline;
+}
+
 /* ----- fin de la navbar */
 
-h1 {
-    margin-top:2%;
+/* ----- Mes_projet */
+
+#Conteneurprojets{
+    margin-top: 2%;
+    margin-left:5%;
+    margin-right:5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
 }
+
+.projet{
+    margin-top:1.5%;
+    border: solid black 1px;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.langage{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.projet h3{
+    margin-top:1%;
+    margin-left:4%;
+    color:black;
+}
+
+.projet .langage p {
+    margin-right:4%;
+    margin-bottom:1%;
+    color:black;
+}
+
+.descP {
+    margin-top: 1%;
+    margin-left:2%;
+    margin-right:2%;
+    margin-bottom: 1%;
+    color:black;
+}
+
+/* ----- fin de Mes_projet */
+
+/* ----- Mes_outils */
+
+#Conteneuroutils{
+    margin-top: 2%;
+    margin-left:5%;
+    margin-right:5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+}
+
+.outil {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.outil img {
+    height:100px;
+}
+/* ----- fin de Mes_projet */
+
+
+/* ----- Me_contacter */
+#Me_contacter {
+    padding-bottom: 2.5%;
+}
+
+#Conteneurcontacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+
+.contact {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact img {
+    height:100px;
+}
+
+.media{
+    display:flex;
+    justify-content: center;
+    color:black;
+}
+
+.media p {
+    text-decoration: none;
+}
+
+/* ----- fin de Me_contacter */
