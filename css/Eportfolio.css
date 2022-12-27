@@ -74,6 +74,24 @@ h1 {
     padding-top:1%;
     margin-bottom:1%;
 }
+
+@keyframes slideImage{
+	0%{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+}
+
+@keyframes slideContent{
+	0%{
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+}
+/*animation:slideContent .4s linear 1.5s backwards;
+animation:slideImage .4s linear;
+*/
+
 /* ----- fin des setting de base */
 
 /* ----- navbar */
@@ -116,51 +134,6 @@ h1 {
 
 /* ----- fin de la navbar */
 
-/* ----- Mes_projet */
-
-#Conteneurprojets{
-    margin-top: 2%;
-    margin-left:5%;
-    margin-right:5%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
-}
-
-.projet{
-    margin-top:1.5%;
-    border: solid black 1px;
-    border-radius: 5%;
-    background-color: white;
-}
-
-.langage{
-    display:flex;
-    justify-content: flex-end;
-}
-
-.projet h3{
-    margin-top:1%;
-    margin-left:4%;
-    color:black;
-}
-
-.projet .langage p {
-    margin-right:4%;
-    margin-bottom:1%;
-    color:black;
-}
-
-.descP {
-    margin-top: 1%;
-    margin-left:2%;
-    margin-right:2%;
-    margin-bottom: 1%;
-    color:black;
-}
-
-/* ----- fin de Mes_projet */
-
 /* ----- Mes_outils */
 
 #Conteneuroutils{
@@ -182,7 +155,80 @@ h1 {
 .outil img {
     height:100px;
 }
+
+.outil:hover img{
+    transform: scale(1.4);
+}
+
+.outil:hover p {
+    transform: scale(1.4);
+    padding-top:5%;
+    max-height: 0;
+}
+/* ----- fin de Mes_Outils */
+
+/* ----- Mes_projet */
+
+#Conteneurprojets{
+    margin-top: 2%;
+    margin-left:5%;
+    margin-right:5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.projet{
+    margin-top:1.5%;
+    border: solid black 1px;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.projet:hover{
+	background-color:var(--releve);
+}
+
+.projet:hover p,.projet:hover h3, .projet:hover .langage p{
+	color:white;
+}
+
+.projet:hover h3 {
+    text-decoration: underline;
+}
+
+.langage{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.projet h3{
+    margin-top:1%;
+    margin-left:4%;
+    color:black;
+    font-size:90%;
+}
+
+.projet .langage p {
+    margin-right:4%;
+    margin-bottom:1%;
+    padding:0.5%;
+    color:black;
+    border:solid 1px black;
+    border-radius: 5px;
+}
+
+.descP {
+    margin-top: 1%;
+    margin-left:2%;
+    margin-right:2%;
+    margin-bottom: 1%;
+    color:black;
+}
+
 /* ----- fin de Mes_projet */
+
+/* ----- Mes_outils */
 
 
 /* ----- Me_contacter */
@@ -205,6 +251,16 @@ h1 {
 
 .contact img {
     height:100px;
+}
+
+.contact:hover img{
+    transform: scale(1.4);
+}
+
+.contact:hover p {
+    transform: scale(1.4);
+    padding-top:12%;
+    max-height: 0;
 }
 
 .media{
