@@ -5,15 +5,13 @@
 <meta charset="utf-8" />
 
 <link rel="stylesheet" type="text/css" href="../css/Eportfolio.css"/>
-
-<script defer src="../javascript/PagePrincipale.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/animation.css"/>
 
 </head>
 	<body>
         <div id="partieSup">
             <header>
                 <p id="titre">Noé Godin</p>
-                <hr>
             </header>
             <nav>
                 <ul id="bandeau">
@@ -26,11 +24,12 @@
         </div>
         <div id="partieInf">
         <div id="A_propos_de_moi">
-            <h1> À propos de moi </h1>
-            <p class="txtDesc"> Je suis étudiant en 2nd année à l'IUT Paris Rives de Seine</p>
+            <h1> À propos de <span style="color: var(--fonce);">moi</span> </h1>
+            <p id="profession">étudiant, 2d année, IUT Paris Cité</p>
+            <p id="txtAProposDeMoi"> Je suis étudiant en 2nd année à l'IUT Paris Rives de Seine</p>
         </div>
         <div id="Mes_outils">
-            <h1> Mes outils </h1>
+            <h1> Mes <span style="color: var(--fonce);">outils</span> </h1>
             <p class="txtDesc"> Voici les langages de programmation que je maîtrise</p>
             <div id="Conteneuroutils">
 
@@ -78,7 +77,7 @@
 
         </div>
         <div id="Mes_projets">
-            <h1> Mes projets </h1>
+            <h1> Mes <span style="color: var(--fonce);">projets</span> </h1>
             <p class="txtDesc"> Voici des projets que j'ai pu mettre en place pendant mes années d'apprentissages en informatique</p>
             <div id="Conteneurprojets">
 
@@ -87,7 +86,6 @@
                         <div class="langage">
                             <p>HTML</p><p>CSS</p><p>JS</p>
                         </div>
-                    <hr>
                     <p class="descP"> <span style="font-size:small;font-weight: lighter;">
                         -Projet lié à mon cursus en informatique, effectué en 2eme année- </span>
                         <br><br>Avec l'aide de 2 autres étudiants, nous avons effectué une refonte graphique d'un site web déjà existant, pour le rendre plus attractif, vivant et fonctionnel</p>
@@ -98,7 +96,6 @@
                         <div class="langage">
                             <p>Python</p><p>SQL</p>
                         </div>
-                    <hr>
                     <p class="descP"> <span style="font-size:small;font-weight: lighter;">
                         -Projet lié à mon cursus en informatique, effectué en 2eme année- </span>
                         <br><br>Avec l'aide de 2 autres étudiants, nous avons à l'aide d'une API, mis en place un scrypt générant aléatoirement de faux profils afin d'exploiter leurs préférences alimentaires</p>
@@ -109,7 +106,6 @@
                         <div class="langage">
                             <p>Java</p>
                         </div>
-                    <hr>
                     <p class="descP"> <span style="font-size:small;font-weight: lighter;">
                         -Projet lié à mon cursus en informatique, effectué en 1er année- </span>
                         <br><br>Avec l'aide de 2 autres étudiants, nous avons réaliser un programme capable d'utiliser l'algorithme de Bellman et Dijkstra sur des graphes contenant plus de 10 000 sommets</p>
@@ -120,7 +116,6 @@
                     <div class="langage">
                         <p>VB.NET</p>
                     </div>
-                <hr>
                 <p class="descP"> <span style="font-size:small;font-weight: lighter;">
                     -Projet lié à mon cursus en informatique, effectué en 1er année- </span>
                     <br><br>Avec l'aide d'un autre étudiant, nous avons réaliser une application permettant à son utilisateur de jouer et d'enregistrer son score au jeu du démineur</p>
@@ -131,7 +126,6 @@
                     <div class="langage">
                         <p>Java</p>
                     </div>
-                <hr>
                 <p class="descP"> <span style="font-size:small;font-weight: lighter;">
                     -Projet lié à mon cursus en informatique, effectué en 1er année- </span>
                     <br><br>Avec l'aide d'un autre étudiant, nous avons réaliser un programme permettant à ces utilisateurs de jouer au jeu de cartes : "6 qui prend"</p>
@@ -142,7 +136,6 @@
                     <div class="langage">
                         <p>Packet tracer</p>
                     </div>
-                <hr>
                 <p class="descP"> <span style="font-size:small;font-weight: lighter;">
                     -Projet lié à mon cursus en informatique, effectué en 1er année- </span>
                     <br><br>Avec l'aide d'un autre étudiant, nous avons réaliser et simuler la maquette d'un réseau d'ordinateur utilisant plusieurs serveurs DHCP pour communiquer entre-eux</p>
@@ -151,7 +144,7 @@
             </div>
         </div>
         <div id="Me_contacter">
-            <h1> Me contacter </h1>
+            <h1> Me <span style="color: var(--fonce);">contacter</span></h1>
 
             <div id="Conteneurcontacts">
 
@@ -181,9 +174,7 @@
                     </div>
                     </a>
                 </div>
-
             </div>
-
         </div>
         </div>
 	</body>

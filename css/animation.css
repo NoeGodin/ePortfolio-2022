@@ -1,0 +1,40 @@
+@keyframes slideImage{
+	0%{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+}
+
+@keyframes slideGversMilieu{
+	0%{
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+}
+
+@keyframes slideDversMilieu{
+	0%{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+}
+/*animation:slideContent .4s linear 1.5s backwards;
+animation:slideImage .4s linear;
+*/
+
+#titre {
+    animation-name: slideImage;
+    animation-duration:4s;
+}
+
+#bandeau a {
+    animation-name: slideGversMilieu;
+    animation-duration:4s;
+}
+
+#A_propos_de_moi {
+    animation-name: slideDversMilieu;
+    animation-duration:4s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}

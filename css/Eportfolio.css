@@ -1,8 +1,8 @@
 :root { /* Variables pour charte graphique */
 	/* Couleurs */
-	--fond:#3FABD0;
-    --releve:#37A1C4;
-    --fonce:#112E38;
+	--fond:#423f3f;
+    --fonce:#FF2D59;
+    --police: white;
 	/* Polices */
 	--gotham:"gotham";
 }
@@ -48,7 +48,7 @@ html {
 }
 
 p, h1,h3,li {
-    font-family:var(--gotham);
+    font-family:var(--gotham)
 }
 
 hr {
@@ -60,89 +60,112 @@ h1 {
     margin-bottom:2%;
     margin-left:3%;
     font-size:3rem;
-    color: var(--fonce);
+    color: var(--police);
 }
 
 .txtDesc {
     margin-left:4%;
 }
 
+/* ----- fin des setting de base */
+
+/* ----- navbar */
+#partieSup {
+    font-family:var(--gotham);
+    background-color: var(--fond);
+}
+
 #titre {
     font-family:var(--gotham);
+    color:var(--fonce);
     font-size: 4rem;
     text-align: center;
     padding-top:1%;
     margin-bottom:1%;
+    
 }
-
-@keyframes slideImage{
-	0%{
-		opacity: 0;
-		transform: translateY(-50px);
-	}
-}
-
-@keyframes slideContent{
-	0%{
-		opacity: 0;
-		transform: translateX(-50px);
-	}
-}
-/*animation:slideContent .4s linear 1.5s backwards;
-animation:slideImage .4s linear;
-*/
-
-/* ----- fin des setting de base */
-
-/* ----- navbar */
 
 #partieInf {
     background-color: var(--fond);
-    color:white;
+    color:var(--police);
 }
 
 #bandeau {
-  display: grid;
-  /*position:fixed; */
+  background-color: var(--fond);
+  display: flex;
   width:100%;
-  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
   list-style: none;
-  grid-auto-rows: auto;
-  grid-gap: 1em;
   align-items: center;
   text-align: center;
-  border-bottom: 2px solid black;
+  /*
+  border-top: 2px solid var(--police);
+  border-bottom: 2px solid var(--police);
+  */
 }
-
 #bandeau a {
     display: flex;
 	position: relative;
 	float: left;
 	height: 50px;
     justify-content: center;
+    width:100%;
     align-items: center;
     font-size: 1.5rem;
-    color : black;
+    color : var(--police);
     text-decoration: none;
+    transition: 300ms ease-in-out;
 }
 
-#bandeau a:hover{
-	background-color:var(--releve);
-    color:white;
-	text-decoration: underline;
+#bandeau a:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 20%;
+    background-color: var(--fonce);
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+
+#bandeau a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom;
 }
 
 /* ----- fin de la navbar */
+/* ----- à propos de moi */
 
+#profession {
+    width:fit-content;
+    display: block;
+    margin-left:10%;
+    text-transform:capitalize;
+    position: relative;
+    padding:10px 20px;
+    color:var(--fond);
+    background: var(--fonce);
+    transform: skew(10deg);
+    color:white;
+}
+
+#txtAProposDeMoi {
+    margin-left:35%;
+    margin-right:4%;
+}
+
+/* ----- fin à propos de moi */
 /* ----- Mes_outils */
 
 #Conteneuroutils{
     margin-top: 2%;
     margin-left:5%;
     margin-right:5%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .outil {
@@ -150,20 +173,27 @@ animation:slideImage .4s linear;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 4%;
+    max-height: 100%;
 }
 
 .outil img {
     height:100px;
+    transition: 300ms ease-in-out;
 }
 
 .outil:hover img{
-    transform: scale(1.4);
+    transform : scale(1.3)
+}
+.outil p {
+    transition: 300ms ease-in-out;
 }
 
 .outil:hover p {
-    transform: scale(1.4);
-    padding-top:5%;
-    max-height: 0;
+    padding-top:20px;
+    
 }
 /* ----- fin de Mes_Outils */
 
@@ -173,9 +203,9 @@ animation:slideImage .4s linear;
     margin-top: 2%;
     margin-left:5%;
     margin-right:5%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .projet{
@@ -183,6 +213,7 @@ animation:slideImage .4s linear;
     border: solid black 1px;
     border-radius: 5%;
     background-color: white;
+    width:400px;
 }
 
 .projet:hover{
@@ -213,16 +244,18 @@ animation:slideImage .4s linear;
     margin-right:4%;
     margin-bottom:1%;
     padding:0.5%;
-    color:black;
+    color:var(--police);
+    background-color: var(--fonce);
     border:solid 1px black;
     border-radius: 5px;
 }
 
 .descP {
-    margin-top: 1%;
-    margin-left:2%;
-    margin-right:2%;
-    margin-bottom: 1%;
+    border-top:solid black 1px;
+    padding-top: 1%;
+    padding-left:2%;
+    padding-right:2%;
+    padding-bottom: 1%;
     color:black;
 }
 
@@ -237,9 +270,9 @@ animation:slideImage .4s linear;
 }
 
 #Conteneurcontacts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .contact {
@@ -250,16 +283,24 @@ animation:slideImage .4s linear;
 }
 
 .contact img {
+    transition: 300ms ease-in-out;
     height:100px;
+    filter: invert();
 }
 
 .contact:hover img{
     transform: scale(1.4);
 }
 
+.contact p {
+    transition: 300ms ease-in-out;
+    min-height: 0;
+    color: var(--police);
+}
+
 .contact:hover p {
     transform: scale(1.4);
-    padding-top:12%;
+    padding-top:20px;
     max-height: 0;
 }
 
