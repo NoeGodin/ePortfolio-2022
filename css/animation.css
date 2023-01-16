@@ -32,7 +32,7 @@ animation:slideImage .4s linear;
     animation-duration:4s;
 }
 
-#A_propos_de_moi {
+#A_propos_de_moi, #A_propos_de_moiT {
     animation-name: slideDversMilieu;
     animation-duration:4s;
     animation-delay: 1s;
