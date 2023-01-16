@@ -6,6 +6,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/Eportfolio.css"/>
 <link rel="stylesheet" type="text/css" href="../css/animation.css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
 
 </head>
 	<body>
@@ -15,18 +16,21 @@
             </header>
             <nav>
                 <ul id="bandeau">
-                    <a href="#A_propos_de_moi"><li id="1"> À propos de moi </li></a>
-                    <a href="#Mes_outils"><li id="2"> Mes outils </li></a>
-                    <a href="#Mes_projets"><li id="3"> Mes projets </li></a>
-                    <a href="#Me_contacter"><li id="4"> Me contacter </li></a>
+                    <a href="#A_propos_de_moi"><li> À propos de moi </li></a>
+                    <a href="#Mes_outils"><li> Mes outils </li></a>
+                    <a href="#Mes_projets"><li> Mes projets </li></a>
+                    <a href="#Me_contacter"><li> Me contacter </li></a>
                 </ul>
             </nav>
         </div>
         <div id="partieInf">
-        <div id="A_propos_de_moi">
+            <br>
+            <br>
+            <br>
             <h1> À propos de <span style="color: var(--fonce);">moi</span> </h1>
-            <p id="profession">étudiant, 2d année, IUT Paris Cité</p>
-            <p id="txtAProposDeMoi"> Je suis étudiant en 2nd année à l'IUT Paris Rives de Seine</p>
+        <div id="A_propos_de_moi">
+            <p id="profession">Étudiant en deuxième année à IUT Paris Cité</p>
+            <p id="txtAProposDeMoi"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem magna, sollicitudin sit amet nunc in, euismod bibendum quam. Vestibulum eget mollis dui. Etiam auctor ex tellus, non bibendum leo imperdiet et. In ac ultricies libero. Fusce maximus, nulla at condimentum consequat, dui est facilisis dolor, </p>
         </div>
         <div id="Mes_outils">
             <h1> Mes <span style="color: var(--fonce);">outils</span> </h1>
@@ -82,67 +86,62 @@
             <div id="Conteneurprojets">
 
                 <div class="projet">
-                        <h3>Refonte graphique d'un site</h3>
-                        <div class="langage">
-                            <p>HTML</p><p>CSS</p><p>JS</p>
-                        </div>
-                    <p class="descP"> <span style="font-size:small;font-weight: lighter;">
-                        -Projet lié à mon cursus en informatique, effectué en 2eme année- </span>
-                        <br><br>Avec l'aide de 2 autres étudiants, nous avons effectué une refonte graphique d'un site web déjà existant, pour le rendre plus attractif, vivant et fonctionnel</p>
-                </div>
-
-                <div class="projet">
-                        <h3>Génération / exploitation de données ciblées</h3>
-                        <div class="langage">
-                            <p>Python</p><p>SQL</p>
-                        </div>
-                    <p class="descP"> <span style="font-size:small;font-weight: lighter;">
-                        -Projet lié à mon cursus en informatique, effectué en 2eme année- </span>
-                        <br><br>Avec l'aide de 2 autres étudiants, nous avons à l'aide d'une API, mis en place un scrypt générant aléatoirement de faux profils afin d'exploiter leurs préférences alimentaires</p>
-                </div>
-
-                <div class="projet">
-                        <h3>Implémentation et résolution de graphes</h3>
-                        <div class="langage">
-                            <p>Java</p>
-                        </div>
-                    <p class="descP"> <span style="font-size:small;font-weight: lighter;">
-                        -Projet lié à mon cursus en informatique, effectué en 1er année- </span>
-                        <br><br>Avec l'aide de 2 autres étudiants, nous avons réaliser un programme capable d'utiliser l'algorithme de Bellman et Dijkstra sur des graphes contenant plus de 10 000 sommets</p>
-                </div>
-
-                <div class="projet">
-                    <h3>Jeu du Démineur</h3>
-                    <div class="langage">
-                        <p>VB.NET</p>
+                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                    <div class="contenu">
+                        <h3 class="nom_projet">Refonte graphique d'un site</h3>
+                        <p class="descriptionProjet">refonte graphique d'un site web déjà existant, pour le rendre plus attractif, vivant et fonctionnel</p>
+                        <span class="tags">HTML,CSS,JS</span>
                     </div>
-                <p class="descP"> <span style="font-size:small;font-weight: lighter;">
-                    -Projet lié à mon cursus en informatique, effectué en 1er année- </span>
-                    <br><br>Avec l'aide d'un autre étudiant, nous avons réaliser une application permettant à son utilisateur de jouer et d'enregistrer son score au jeu du démineur</p>
                 </div>
 
                 <div class="projet">
-                    <h3>Jeu du 6 qui prend</h3>
-                    <div class="langage">
-                        <p>Java</p>
+                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                    <div class="contenu">
+                        <h3 class="nom_projet">Génération / exploitation de données ciblées</h3>
+                        <p class="descriptionProjet">Avec l'aide de 2 autres étudiants, nous avons à l'aide d'une API, mis en place un scrypt générant aléatoirement de faux profils afin d'exploiter leurs préférences alimentaires</p>
+                        <span class="tags">Python,SQL</span>
                     </div>
-                <p class="descP"> <span style="font-size:small;font-weight: lighter;">
-                    -Projet lié à mon cursus en informatique, effectué en 1er année- </span>
-                    <br><br>Avec l'aide d'un autre étudiant, nous avons réaliser un programme permettant à ces utilisateurs de jouer au jeu de cartes : "6 qui prend"</p>
                 </div>
 
                 <div class="projet">
-                    <h3>Réseau DHCP d'une entreprise</h3>
-                    <div class="langage">
-                        <p>Packet tracer</p>
+                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                    <div class="contenu">
+                        <h3 class="nom_projet">Implémentation et résolution de graphes</h3>
+                        <p class="descriptionProjet">Avec l'aide de 2 autres étudiants, nous avons réaliser un programme capable d'utiliser l'algorithme de Bellman et Dijkstra sur des graphes contenant plus de 10 000 sommets</p>
+                        <span class="tags">Java</span>
                     </div>
-                <p class="descP"> <span style="font-size:small;font-weight: lighter;">
-                    -Projet lié à mon cursus en informatique, effectué en 1er année- </span>
-                    <br><br>Avec l'aide d'un autre étudiant, nous avons réaliser et simuler la maquette d'un réseau d'ordinateur utilisant plusieurs serveurs DHCP pour communiquer entre-eux</p>
+                </div>
+
+                <div class="projet">
+                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                    <div class="contenu">
+                        <h3 class="nom_projet">Jeu du 6 qui prend</h3>
+                        <p class="descriptionProjet">Avec l'aide d'un autre étudiant, nous avons réaliser un programme permettant à ces utilisateurs de jouer au jeu de cartes : "6 qui prend"</p>
+                        <span class="tags">Java</span>
+                    </div>
+                </div>
+
+                <div class="projet">
+                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                    <div class="contenu">
+                        <h3 class="nom_projet">Jeu du Démineur</h3>
+                        <p class="descriptionProjet">Avec l'aide d'un autre étudiant, nous avons réaliser une application permettant à son utilisateur de jouer et d'enregistrer son score au jeu du démineur</p>
+                        <span class="tags">VB.NET</span>
+                    </div>
+                </div>
+
+                <div class="projet">
+                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                    <div class="contenu">
+                        <h3 class="nom_projet">Réseau DHCP d'une entreprise</h3>
+                        <p class="descriptionProjet">Avec l'aide d'un autre étudiant, nous avons réaliser et simuler la maquette d'un réseau d'ordinateur utilisant plusieurs serveurs DHCP pour communiquer entre-eux</p>
+                        <span class="tags">Packet tracer</span>
+                    </div>
                 </div>
 
             </div>
         </div>
+
         <div id="Me_contacter">
             <h1> Me <span style="color: var(--fonce);">contacter</span></h1>
 

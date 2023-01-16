@@ -47,8 +47,9 @@ html {
     box-sizing: inherit;
 }
 
-p, h1,h3,li {
-    font-family:var(--gotham)
+p, h1,h3,li,span {
+    font-family: 'Montserrat';
+    font-weight: 300;
 }
 
 hr {
@@ -56,7 +57,7 @@ hr {
 }
 
 h1 {
-    padding-top:6%;
+    padding-top:3%;
     margin-bottom:2%;
     margin-left:3%;
     font-size:3rem;
@@ -71,12 +72,10 @@ h1 {
 
 /* ----- navbar */
 #partieSup {
-    font-family:var(--gotham);
     background-color: var(--fond);
 }
 
 #titre {
-    font-family:var(--gotham);
     color:var(--fonce);
     font-size: 4rem;
     text-align: center;
@@ -98,10 +97,7 @@ h1 {
   list-style: none;
   align-items: center;
   text-align: center;
-  /*
   border-top: 2px solid var(--police);
-  border-bottom: 2px solid var(--police);
-  */
 }
 #bandeau a {
     display: flex;
@@ -137,23 +133,29 @@ h1 {
 
 /* ----- fin de la navbar */
 /* ----- à propos de moi */
+#A_propos_de_moi {
+    display: block;
+}
 
 #profession {
     width:fit-content;
     display: block;
-    margin-left:10%;
-    text-transform:capitalize;
+    margin-left:3%;
+    margin-right:3%;
+    margin-bottom:1%;
     position: relative;
     padding:10px 20px;
     color:var(--fond);
     background: var(--fonce);
     transform: skew(10deg);
     color:white;
+    grid-template-columns: max-content;
+    float:left;
 }
 
 #txtAProposDeMoi {
-    margin-left:35%;
-    margin-right:4%;
+    margin-left:3%;
+    margin-right:3%;
 }
 
 /* ----- fin à propos de moi */
@@ -166,6 +168,8 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    overflow: hidden;
+    height: 55%;
 }
 
 .outil {
@@ -175,7 +179,8 @@ h1 {
     flex-direction: column;
     padding-left: 7%;
     padding-right: 7%;
-    padding-bottom: 4%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     max-height: 100%;
 }
 
@@ -206,59 +211,62 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width:90%;
 }
 
 .projet{
     margin-top:1.5%;
-    border: solid black 1px;
-    border-radius: 5%;
-    background-color: white;
+    position:relative;
+    display: block;
     width:400px;
 }
 
-.projet:hover{
-	background-color:var(--releve);
+.projet img{
+    width:90%;
+    object-fit: cover;
 }
 
-.projet:hover p,.projet:hover h3, .projet:hover .langage p{
-	color:white;
-}
-
-.projet:hover h3 {
-    text-decoration: underline;
-}
-
-.langage{
+.projet .contenu {
+    position:absolute;
+    top:0;
+    left:0;
+    width:90%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
+    transition: .5s;
+    opacity:0;
 }
 
-.projet h3{
-    margin-top:1%;
-    margin-left:4%;
-    color:black;
-    font-size:90%;
+.nom_projet {
+    font-weight:300;
+    font-size:1.5rem;
+    text-align: center;
 }
 
-.projet .langage p {
-    margin-right:4%;
-    margin-bottom:1%;
-    padding:0.5%;
-    color:var(--police);
-    background-color: var(--fonce);
-    border:solid 1px black;
-    border-radius: 5px;
+.descriptionProjet {
+    position: absolute;
+    font-size: 1em;
+    font-weight: 100;
+    top:25px;
+    left:10px
 }
 
-.descP {
-    border-top:solid black 1px;
-    padding-top: 1%;
-    padding-left:2%;
-    padding-right:2%;
-    padding-bottom: 1%;
-    color:black;
+.tags {
+    position:absolute;
+    bottom:20px;
+    opacity: 0.6;
+    width:90%;
 }
 
+.projet:hover .contenu{
+    opacity:1;
+}
+
+.projet:hover img{
+    filter:blur(2px);
+}
 /* ----- fin de Mes_projet */
 
 /* ----- Mes_outils */
@@ -273,6 +281,8 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    overflow: hidden;
+    height:25%;
 }
 
 .contact {
