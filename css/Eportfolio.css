@@ -1,71 +1,97 @@
-:root { /* Variables pour charte graphique */
-	/* Couleurs */
-	--fond:#423f3f;
-    --fonce:#FF2D59;
+:root {
+    /* Variables pour charte graphique */
+    /* Couleurs */
+    --fond: #423f3f;
+    --fonce: #FF2D59;
     --police: white;
-	/* Polices */
-	--gotham:"gotham";
+    /* Polices */
+    --gotham: "gotham";
 }
 
 /* ----- setting de base */
-a:link { 
-    text-decoration: none; 
+a:link {
+    text-decoration: none;
 }
 
 
-a:visited { 
-    text-decoration: none; 
+a:visited {
+    text-decoration: none;
 }
 
 
 a:hover {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 
 a:active {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
     font-size: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    margin: 5%;
-    box-shadow: 0 15px 30px rgba(0,0,0,.9);
+    /* margin: 5%;
+    width:90%;
+    box-shadow: 0 15px 30px rgba(0,0,0,.9); */
     padding: 0px;
     min-height: 100vh;
 
+
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
-p, h1,h3,li,span {
+p,
+h1,
+h3,
+li,
+span {
     font-family: 'Montserrat';
     font-weight: 300;
 }
 
 hr {
-    border : solid black 1px;
+    border: solid black 1px;
 }
 
 h1 {
-    padding-top:3%;
-    margin-bottom:2%;
-    margin-left:3%;
-    font-size:3rem;
+    padding-top: 3%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    font-size: 3rem;
     color: var(--police);
 }
 
 .txtDesc {
-    margin-left:4%;
+    margin-left: 4%;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--fond);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--fonce);
+    border-radius: 40px;
 }
 
 /* ----- fin des setting de base */
@@ -76,39 +102,40 @@ h1 {
 }
 
 #titre {
-    color:var(--fonce);
+    color: var(--fonce);
     font-size: 4rem;
     text-align: center;
-    padding-top:1%;
-    margin-bottom:1%;
-    
+    padding-top: 1%;
+    margin-bottom: 1%;
+
 }
 
 #partieInf {
     background-color: var(--fond);
-    color:var(--police);
+    color: var(--police);
 }
 
 #bandeau {
-  background-color: var(--fond);
-  display: flex;
-  width:100%;
-  justify-content: space-evenly;
-  list-style: none;
-  align-items: center;
-  text-align: center;
-  border-top: 2px solid var(--police);
+    background-color: var(--fond);
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid var(--police);
 }
+
 #bandeau a {
     display: flex;
-	position: relative;
-	float: left;
-	height: 50px;
+    position: relative;
+    float: left;
+    height: 50px;
     justify-content: center;
-    width:100%;
+    width: 100%;
     align-items: center;
     font-size: 1.5rem;
-    color : var(--police);
+    color: var(--police);
     text-decoration: none;
     transition: 300ms ease-in-out;
 }
@@ -138,113 +165,109 @@ h1 {
 }
 
 #profession {
-    width:fit-content;
+    width: fit-content;
     display: block;
-    margin-left:3%;
-    margin-right:3%;
-    margin-bottom:1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 1%;
     position: relative;
-    padding:10px 20px;
-    color:var(--fond);
+    padding: 10px 20px;
+    color: var(--fond);
     background: var(--fonce);
     transform: skew(10deg);
-    color:white;
+    color: white;
     grid-template-columns: max-content;
-    float:left;
+    float: left;
 }
 
 #txtAProposDeMoi {
-    margin-left:3%;
-    margin-right:3%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 /* ----- fin à propos de moi */
 /* ----- Mes_outils */
 
-#Conteneuroutils{
+#Conteneuroutils {
     margin-top: 2%;
-    margin-left:5%;
-    margin-right:5%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
 }
 
 .outil {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    overflow: hidden;
-    height:180px;
-    max-height: 180px;
+    height: 180px;
 }
 
 .outil img {
-    height:100px;
+    height: 100px;
     transition: 300ms ease-in-out;
 }
 
-.outil:hover img{
-    transform : scale(1.3)
+.outil:hover img {
+    transform: scale(1.3)
 }
+
 .outil p {
     transition: 300ms ease-in-out;
 }
 
 .outil:hover p {
-    padding-top:20px;
-    
+    padding-top: 20px;
+
 }
+
 /* ----- fin de Mes_Outils */
 
 /* ----- Mes_projet */
 
-#Conteneurprojets{
+#Conteneurprojets {
     margin-top: 2%;
-    margin-left:4%;
-    margin-right:3%;
+    margin-left: 4%;
+    margin-right: 3%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width:93%;
+    width: 93%;
 }
 
-.projet{
-    margin-top:1.5%;
-    position:relative;
+.projet {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    position: relative;
     display: block;
-    width:400px;
-    height:150px;
+    width: 400px;
+    height: 150px;
 }
 
-.projet img{
-    width:100%;
-    height:100%;
+.projet img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .projet .contenu {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: rgba(0,0,0,0.7);
-    display:flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
     justify-content: center;
     transition: .5s;
-    opacity:0;
+    opacity: 0;
 }
 
 .nom_projet {
-    font-weight:300;
-    font-size:1.3rem;
+    font-weight: 300;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -252,44 +275,39 @@ h1 {
     position: absolute;
     font-size: 1em;
     font-weight: 100;
-    align-self:center;
-    margin:2%;
+    align-self: center;
+    margin: 2%;
 }
 
 .tags {
-    position:absolute;
-    bottom:10px;
+    position: absolute;
+    bottom: 10px;
     opacity: 0.6;
-    width:90%;
+    width: 90%;
 }
 
-.projet:hover .contenu{
-    opacity:1;
+.projet:hover .contenu {
+    opacity: 1;
 }
 
-.projet:hover img{
-    filter:blur(4px);
+.projet:hover img {
+    filter: blur(4px);
 }
+
 /* ----- fin de Mes_projet */
 
 /* ----- Mes_outils */
 
 
-/* ----- Me_contacter */
-#Me_contacter {
-    padding-bottom: 2.5%;
-}
-
 #Conteneurcontacts {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    overflow: hidden;
-    height:25%;
+    height: 200px;
 }
 
-.contact {
-    display:flex;
+.contact a {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -297,11 +315,11 @@ h1 {
 
 .contact img {
     transition: 300ms ease-in-out;
-    height:100px;
+    height: 100px;
     filter: invert();
 }
 
-.contact:hover img{
+.contact:hover img {
     transform: scale(1.4);
 }
 
@@ -313,18 +331,7 @@ h1 {
 
 .contact:hover p {
     transform: scale(1.4);
-    padding-top:20px;
+    padding-top: 12%;
+    padding-top: 20px;
     max-height: 0;
 }
-
-.media{
-    display:flex;
-    justify-content: center;
-    color:black;
-}
-
-.media p {
-    text-decoration: none;
-}
-
-/* ----- fin de Me_contacter */

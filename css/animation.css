@@ -22,7 +22,75 @@
 animation:slideImage .4s linear;
 */
 
-#titre {
+.animate-on-scroll {
+	opacity: 0;
+	transform: translate(-10%, 0);
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.2s;
+}
+
+.animate-on-scroll2 {
+	opacity: 0;
+	transform: translate(10%, 0);
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.2s;
+}
+
+.animate {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.outil:nth-child(2) {
+	transition-delay: 0.4s;
+}
+
+.outil:nth-child(3) {
+	transition-delay: 0.6s;
+}
+
+.outil:nth-child(4) {
+	transition-delay: 0.8s;
+}
+
+.outil:nth-child(5) {
+	transition-delay: 0.2s;
+}
+
+.outil:nth-child(6) {
+	transition-delay: 0.4s;
+}
+
+.outil:nth-child(7) {
+	transition-delay: 0.6s;
+}
+
+.outil:nth-child(8) {
+	transition-delay: 0.8s;
+}
+
+
+
+.projet:nth-child(2) {
+	transition-delay: 0.3s;
+}
+
+.projet:nth-child(3) {
+	transition-delay: 0.5s;
+}
+
+.projet:nth-child(4) {
+	transition-delay: 0.3s;
+}
+
+.projet:nth-child(5) {
+	transition-delay: 0.5s;
+}
+
+.projet:nth-child(6) {
+	transition-delay: 0.7s;
+}
+/* #titre {
     animation-name: slideImage;
     animation-duration:4s;
 }
@@ -37,4 +105,4 @@ animation:slideImage .4s linear;
     animation-duration:4s;
     animation-delay: 1s;
     animation-fill-mode: both;
-}
+} */

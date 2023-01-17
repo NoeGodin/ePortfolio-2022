@@ -1,140 +1,159 @@
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<title>Page Principale</title>
+    <title>Page Principale</title>
 
-<meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" href="../css/Eportfolio.css"/>
-<link rel="stylesheet" type="text/css" href="../css/animation.css"/>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/Eportfolio.css" />
+    <link rel="stylesheet" type="text/css" href="../css/animation.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
 
 </head>
-	<body>
-        <div id="partieSup">
-            <header>
-                <p id="titre">Noé Godin</p>
-            </header>
-            <nav>
-                <ul id="bandeau">
-                    <a href="#A_propos_de_moi"><li> À propos de moi </li></a>
-                    <a href="#Mes_outils"><li> Mes outils </li></a>
-                    <a href="#Mes_projets"><li> Mes projets </li></a>
-                    <a href="#Me_contacter"><li> Me contacter </li></a>
-                </ul>
-            </nav>
-        </div>
-        <div id="partieInf">
-            <br>
-            <br>
-            <br>
-            <h1 id="A_propos_de_moiT"> À propos de <span style="color: var(--fonce);">moi</span> </h1>
-        <div id="A_propos_de_moi">
+
+<body>
+    <div id="partieSup">
+        <header>
+            <p id="titre">Noé Godin</p>
+        </header>
+        <nav>
+            <ul id="bandeau">
+                <a href="#A_propos_de_moi">
+                    <li> À propos de moi </li>
+                </a>
+                <a href="#Mes_outils">
+                    <li> Mes outils </li>
+                </a>
+                <a href="#Mes_projets">
+                    <li> Mes projets </li>
+                </a>
+                <a href="#Me_contacter">
+                    <li> Me contacter </li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <div id="partieInf">
+        <br>
+        <br>
+        <br>
+        <h1 id="A_propos_de_moiT"> À propos de <span style="color: var(--fonce);">moi</span> </h1>
+        <div id="A_propos_de_moi" class="animate-on-scroll">
             <p id="profession">Étudiant en deuxième année à IUT Paris Cité</p>
-            <p id="txtAProposDeMoi"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem magna, sollicitudin sit amet nunc in, euismod bibendum quam. Vestibulum eget mollis dui. Etiam auctor ex tellus, non bibendum leo imperdiet et. In ac ultricies libero. Fusce maximus, nulla at condimentum consequat, dui est facilisis dolor, </p>
+            <p id="txtAProposDeMoi">Bienvenue sur mon ePortefolio, je m'appelle Noé Godin, je suis un étudiant passioné par l'informatique et les mathématiques. Je suis curieux et aime apprendre </p>
         </div>
-        <div id="Mes_outils">
+        <div id="Mes_outils" class="boxes">
             <h1> Mes <span style="color: var(--fonce);">outils</span> </h1>
             <p class="txtDesc"> Voici les langages de programmation que je maîtrise</p>
             <div id="Conteneuroutils">
 
-                <div class="outil">
+                <div class="outil animate-on-scroll2">
                     <img src="../sources/HTML.png" alt="HTML5" />
                     <p> HTML 5 </p>
                 </div>
 
-                <div class="outil">
+                <div class="outil animate-on-scroll2">
                     <img src="../sources/CSS.png" alt="CSS3" />
                     <p> CSS 3 </p>
                 </div>
 
-                <div class="outil">
+                <div class="outil animate-on-scroll2">
                     <img src="../sources/Javascript.png" alt="Javascript" />
                     <p> Javascript </p>
                 </div>
 
-                <div class="outil">
+                <div class="outil animate-on-scroll2">
                     <img src="../sources/SQL3.png" alt="SQL3" />
                     <p> SQL 3 </p>
                 </div>
 
-                <div class="outil">
+                <div class="outil animate-on-scroll2">
                     <img src="../sources/C.png" alt="C" />
                     <p> C </p>
                 </div>
 
-                <div class="outil">
+                <div class="outil animate-on-scroll2">
                     <img src="../sources/C++.png" alt="C++" />
                     <p> C++ </p>
                 </div>
 
-                <div class="outil">
+                <div class="outil animate-on-scroll2">
                     <img src="../sources/python.png" alt="Python" />
                     <p> Python </p>
                 </div>
 
-                <div class="outil">
+                <div class="outil animate-on-scroll2">
                     <img src="../sources/java.png" alt="Java" />
                     <p> Java </p>
                 </div>
-            
+
             </div>
 
         </div>
         <div id="Mes_projets">
             <h1> Mes <span style="color: var(--fonce);">projets</span> </h1>
-            <p class="txtDesc"> Voici des projets que j'ai pu mettre en place pendant mes années d'apprentissages en informatique</p>
+            <p class="txtDesc"> Voici des projets que j'ai pu mettre en place pendant mes années d'apprentissages en
+                informatique</p>
             <div id="Conteneurprojets">
 
-                <div class="projet">
-                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                <div class="projet animate-on-scroll2">
+                    <img src="../sources/Pr_Graphe.png" alt="NoeGodin" />
                     <div class="contenu">
                         <h3 class="nom_projet">Refonte graphique d'un site</h3>
-                        <p class="descriptionProjet">refonte graphique d'un site web déjà existant, le rendant plus attractif, vivant et fonctionnel</p>
+                        <p class="descriptionProjet">refonte graphique d'un site web déjà existant, le rendant plus
+                            attractif, vivant et fonctionnel</p>
                         <span class="tags">HTML,CSS,JS</span>
                     </div>
                 </div>
 
-                <div class="projet">
-                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                <div class="projet animate-on-scroll2">
+                    <img src="../sources/Pr_Graphe.png" alt="NoeGodin" />
                     <div class="contenu">
                         <h3 class="nom_projet">Génération / exploitation de données ciblées</h3>
-                        <p class="descriptionProjet">mis en place d'un scrypt générant aléatoirement de faux profils à l'aide d'une API afin d'en exploiter les résultats</p>
+                        <p class="descriptionProjet">mis en place d'un scrypt générant aléatoirement de faux profils à
+                            l'aide d'une API afin d'en exploiter les résultats</p>
                         <span class="tags">Python,SQL</span>
                     </div>
                 </div>
 
-                <div class="projet">
-                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                <div class="projet animate-on-scroll2">
+                    <img src="../sources/Pr_Graphe.png" alt="NoeGodin" />
                     <div class="contenu">
                         <h3 class="nom_projet">Implémentation / résolution chemins de graphes</h3>
-                        <p class="descriptionProjet">réalisation d'un programme capable d'utiliser l'algorithme de Bellman et Dijkstra sur des graphes contenant plus de 10 000 sommets</p>
+                        <p class="descriptionProjet">réalisation d'un programme capable d'utiliser l'algorithme de
+                            Bellman et Dijkstra sur des graphes contenant plus de 10 000 sommets</p>
                         <span class="tags">Java</span>
                     </div>
                 </div>
 
-                <div class="projet">
-                    <img src="../sources/6QuiPrend.jpg"alt="NoeGodin"/>
+                <div class="projet animate-on-scroll2">
+                    <img src="../sources/6QuiPrend.jpg" alt="NoeGodin" />
                     <div class="contenu">
                         <h3 class="nom_projet">Jeu du 6 qui prend</h3>
-                        <p class="descriptionProjet">réalisation d'un programme permettant à ces utilisateurs de jouer au jeu de cartes : "6 qui prend"</p>
+                        <p class="descriptionProjet">réalisation d'un programme permettant à ces utilisateurs de jouer
+                            au jeu de cartes : "6 qui prend"</p>
                         <span class="tags">Java</span>
                     </div>
                 </div>
 
-                <div class="projet">
-                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                <div class="projet animate-on-scroll2">
+                    <img src="../sources/Pr_Graphe.png" alt="NoeGodin" />
                     <div class="contenu">
                         <h3 class="nom_projet">Jeu du Démineur</h3>
-                        <p class="descriptionProjet">réalisation d'une application permettant de jouer et de s'enregistrer au jeu du démineur</p>
+                        <p class="descriptionProjet">réalisation d'une application permettant de jouer et de
+                            s'enregistrer au jeu du démineur</p>
                         <span class="tags">VB.NET</span>
                     </div>
                 </div>
 
-                <div class="projet">
-                    <img src="../sources/Pr_Graphe.png"alt="NoeGodin"/>
+                <div class="projet animate-on-scroll2">
+                    <img src="../sources/Pr_Graphe.png" alt="NoeGodin" />
                     <div class="contenu">
                         <h3 class="nom_projet">Réseau DHCP d'une entreprise</h3>
-                        <p class="descriptionProjet">planification et simulation d'une maquette de réseau d'ordinateurs utilisant plusieurs serveurs DHCP pour communiquer entre-eux</p>
+                        <p class="descriptionProjet">planification et simulation d'une maquette de réseau d'ordinateurs
+                            utilisant plusieurs serveurs DHCP pour communiquer entre-eux</p>
                         <span class="tags">Packet tracer</span>
                     </div>
                 </div>
@@ -142,39 +161,36 @@
             </div>
         </div>
 
-        <div id="Me_contacter">
+        <div id="Me_contacter" class="animate-on-scroll">
             <h1> Me <span style="color: var(--fonce);">contacter</span></h1>
 
             <div id="Conteneurcontacts">
 
                 <div class="contact">
                     <a href="mailto:noegodin2@gmail.com">
-                    <img src="../sources/mail.png" alt="noegodin2@gmail.com" />
-                    <div class="media">
+                        <img src="../sources/mail.png" alt="noegodin2@gmail.com" />
                         <p> E-mail </p>
-                    </div>
                     </a>
                 </div>
 
                 <div class="contact">
                     <a href="tel:+33782543900">
-                    <img src="../sources/telephone.png" alt="0782543900" />
-                    <div class="media">
+                        <img src="../sources/telephone.png" alt="0782543900" />
                         <p> Téléphone </p>
-                    </div>
                     </a>
                 </div>
 
                 <div class="contact">
                     <a href="https://github.com/NoeGodin">
-                    <img src="../sources/github.png" alt="NoeGodin" />
-                    <div class="media">
+                        <img src="../sources/github.png" alt="NoeGodin" />
                         <p> Github </p>
-                    </div>
                     </a>
                 </div>
             </div>
         </div>
-        </div>
-	</body>
+    </div>
+
+    <script src="../js/animation.js"></script>
+</body>
+
 </html>
