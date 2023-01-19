@@ -183,6 +183,7 @@ body::-webkit-scrollbar-thumb {
 #txtAProposDeMoi {
     margin-left: 3%;
     margin-right: 3%;
+    font-size: 1.3rem;
     text-align: justify;
 }
 
@@ -335,4 +336,73 @@ body::-webkit-scrollbar-thumb {
     padding-top: 12%;
     padding-top: 20px;
     max-height: 0;
+}
+/* ----- animations */
+.animate-on-scroll {
+	opacity: 0;
+	transform: translate(-10%, 0);
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.2s;
+}
+
+.animate-on-scroll2 {
+	opacity: 0;
+	transform: translate(10%, 0);
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.2s;
+}
+
+.animate {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.outil:nth-child(2) {
+	transition-delay: 0.4s;
+}
+
+.outil:nth-child(3) {
+	transition-delay: 0.6s;
+}
+
+.outil:nth-child(4) {
+	transition-delay: 0.8s;
+}
+
+.outil:nth-child(5) {
+	transition-delay: 0.2s;
+}
+
+.outil:nth-child(6) {
+	transition-delay: 0.4s;
+}
+
+.outil:nth-child(7) {
+	transition-delay: 0.6s;
+}
+
+.outil:nth-child(8) {
+	transition-delay: 0.8s;
+}
+
+
+
+.projet:nth-child(2) {
+	transition-delay: 0.3s;
+}
+
+.projet:nth-child(3) {
+	transition-delay: 0.5s;
+}
+
+.projet:nth-child(4) {
+	transition-delay: 0.3s;
+}
+
+.projet:nth-child(5) {
+	transition-delay: 0.5s;
+}
+
+.projet:nth-child(6) {
+	transition-delay: 0.7s;
 }
